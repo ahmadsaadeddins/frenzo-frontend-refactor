@@ -19,7 +19,7 @@ const useStyles = makeStyles(contactStyle);
 
 export default function SectionContact() {
   const [specialitySelect, setSpecialitySelect] = React.useState("1");
-  const handleSpeciality = event => {
+  const handleSpeciality = (event) => {
     setSpecialitySelect(event.target.value);
   };
   const classes = useStyles();
@@ -45,7 +45,7 @@ export default function SectionContact() {
                 <CustomInput
                   labelText="Your name"
                   formControlProps={{
-                    fullWidth: true
+                    fullWidth: true,
                   }}
                 />
               </GridItem>
@@ -53,7 +53,7 @@ export default function SectionContact() {
                 <CustomInput
                   labelText="Your email"
                   formControlProps={{
-                    fullWidth: true
+                    fullWidth: true,
                   }}
                 />
               </GridItem>
@@ -68,22 +68,22 @@ export default function SectionContact() {
                 >
                   <Select
                     MenuProps={{
-                      className: classes.selectMenu
+                      className: classes.selectMenu,
                     }}
                     classes={{
-                      select: classes.select
+                      select: classes.select,
                     }}
                     value={specialitySelect}
                     onChange={handleSpeciality}
                     inputProps={{
                       name: "specialitySelect",
-                      id: "speciality-select"
+                      id: "speciality-select",
                     }}
                   >
                     <MenuItem
                       disabled
                       classes={{
-                        root: classes.selectMenuItem
+                        root: classes.selectMenuItem,
                       }}
                     >
                       Speciality
@@ -91,7 +91,7 @@ export default function SectionContact() {
                     <MenuItem
                       classes={{
                         root: classes.selectMenuItem,
-                        selected: classes.selectMenuItemSelected
+                        selected: classes.selectMenuItemSelected,
                       }}
                       value="1"
                     >
@@ -100,7 +100,7 @@ export default function SectionContact() {
                     <MenuItem
                       classes={{
                         root: classes.selectMenuItem,
-                        selected: classes.selectMenuItemSelected
+                        selected: classes.selectMenuItemSelected,
                       }}
                       value="2"
                     >
@@ -109,7 +109,7 @@ export default function SectionContact() {
                     <MenuItem
                       classes={{
                         root: classes.selectMenuItem,
-                        selected: classes.selectMenuItemSelected
+                        selected: classes.selectMenuItemSelected,
                       }}
                       value="3"
                     >
