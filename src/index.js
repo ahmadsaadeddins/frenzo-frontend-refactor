@@ -40,7 +40,8 @@ import SectionsPage from "views/SectionsPage/SectionsPage.js";
 import ShoppingCartPage from "views/ShoppingCartPage/ShoppingCartPage.js";
 import SignupPage from "views/SignupPage/SignupPage.js";
 import ErrorPage from "views/ErrorPage/ErrorPage.js";
-import Prayers from "assets/features/Prayers/Prayers.js";
+// import Prayers from "assets/features/Prayers/Prayers.js";
+import CreateDevice from "assets/features/devices/CreateDevice.js";
 
 var hist = createBrowserHistory();
 
@@ -48,7 +49,8 @@ ReactDOM.render(
   <Provider store={store}>
     <Router history={hist}>
       <Switch>
-        <Route path="/Prayers" component={Prayers} />
+        {/* <Route path="/Prayers" component={Prayers} /> */}
+        <Route path="/create" component={CreateDevice} />
         <Route path="/about-us" component={AboutUsPage} />
         <Route path="/blog-post" component={BlogPostPage} />
         <Route path="/blog-posts" component={BlogPostsPage} />
